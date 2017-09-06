@@ -1,0 +1,51 @@
+---
+title: 会社のCVSにコマンドラインでログインする方法
+layout: post
+categories: Dev
+data: 2017-03-05
+tag: [CVS,SSH]
+---
+
+## このページを参照
+
+ - CVS/CVSサーバの設定の巻：
+
+[http://www.sea-bird.org/pukiwiki/index.php?CVS%2FCVS%A5%B5%A1%BC%A5%D0%A4%CE%C0%DF%C4%EA%A4%CE%B4%AC](http://www.sea-bird.org/pukiwiki/index.php?CVS%2FCVS%A5%B5%A1%BC%A5%D0%A4%CE%C0%DF%C4%EA%A4%CE%B4%AC)
+
+ - コマンドは以下：
+
+```
+#接続のタイプはSSH
+#loginの時port指定不能なので、以下のようにport指定
+$ echo "ssh -p ${CVS_SSH_PORT} $*" > /tmp/ssh_with_port
+$ chmod +x /tmp/ssh_with_port
+
+export CVS_RSH=/tmp/ssh_with_port
+export CVS_SSH_PORT=40022
+
+#CVSROOT設定で毎回URL入力が不要
+export CVSROOT=:ext:aron@almas.dip.jp:/cvs/mongol/fontproject
+
+#後は
+$cvs checkout fontproject 
+#でOK!
+
+#cvs login は要らない！
+```
+ 
+ - 当然ながらprivate keyがssh homeにないとダメ！
+
+## 使えなくなった
+原因不明
+```bash
+% cvs checkout fontproject 
+usage: ssh [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] [user@]hostname [command]
+cvs [checkout aborted]: end of file from server (consult above messages if any)
+```
+ 
+

@@ -1,0 +1,17 @@
+---
+title: tmux2.3のインストール
+layout: post
+category: Linux
+tags: [tmux, linux, terminal]
+---
+
+## tmux 2.3
+
+tmux 1.xはVIMの配色を表示できない、なので2.3を入れなきゃ！
+
+- github [https://github.com/tmux/tmux](https://github.com/tmux/tmux)
+
+
+
+
+
