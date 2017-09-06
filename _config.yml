@@ -17,7 +17,7 @@ title: Arons's Personal Blog
 # email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   记录我的学习，想法，生活等等...
-  
+
   俺の勉強、アイディア、生活などを記録...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -29,6 +29,9 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+# 未来のポストを隠す
+future: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
