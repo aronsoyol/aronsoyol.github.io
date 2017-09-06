@@ -2,7 +2,7 @@
 layout: post
 author: aron
 title: パーセプトロン
-categories: 機械学習
+# categories: 機械学習
 data: 2017-02-24
 tags: [プロトタイプ, 決定境界, 識別関数, 学習アルゴリズム]
 permalink: perceptron
@@ -12,7 +12,7 @@ permalink: perceptron
 線形分離可能なデータの決定境界を下の図の様に得る
 
 {: .center}
-![adfadf]({{ site.baseurl }}/perceptron.jpg)
+![adfadf]({{ site.baseurl }}/assets/perceptron.jpg)
 
 
 ## 特徴ベクトルとプロトタイプとの距離
