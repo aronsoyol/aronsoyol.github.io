@@ -45,9 +45,7 @@ Permission denied (publickey).
 
 
 
-## 5. vagrant sshでログイン出来なくなる
 
-HostOSで
 以上！
 
 
