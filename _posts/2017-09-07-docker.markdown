@@ -1,0 +1,50 @@
+---
+title: Docker
+layout: post
+data: Fri Sep  8 12:40:14 2017
+tags: [Docker, linux, command, terminal]
+category: Docker
+---
+
+Docker の勉強をしました。
+
+
+## 基本コマンドCommand一覧
+
+`docker search XXX` : XXXをキーワードのイメージを検索（Docker Hubから？）
+
+`docker pull XXX`:　XXX imageをプール(Download)
+
+イメージにはバージョンごとにタグが違います。タグ指定しないとLatestタグのイメージがダウンロードされる。どんなタグがあるのかはコマンドで取得出来ない。以下を参照：
+
+[http://www.mazn.net/blog/2015/12/26/1548.html](http://www.mazn.net/blog/2015/12/26/1548.html)
+
+`curl -s https://registry.hub.docker.com/v1/repositories/centos/tags | sed "s/,/\n/g" | grep name | cut -d '"' -f 4`
+
+`docker images` : image の一覧
+
+`docker inspect [ID|name|name:tag]`: image の 詳細を見る
+
+`docker rmi XXX`: image XXXを削除
+
+`docker run XXX -d COMMAND_ON_XXX` :XXX image を実行する, `COMMAND_ON_XXX`はコンテナーの中で実行されるコマンド。`-d`オプションでバックグランドで実行する。例えば
+`docker run centos -d free -s 3`とすると、`centos`というイメージのコンテナーが立ち上がって、その中に`free -s 3`コマンド(メモリーの使用状況を見る)が実行される。`-s 3`は3秒ごとに実行されることを指示している。
+
+**＊注意**：
+上記例で`-d` と　`-t`両方を付けないなかったらと実行から抜けることが出来なくなる。こうなったら別テーミナルで`docker stop {CONTAINER ID}` で停止させるしかない。
+
+`docker ps`: 実行中のコンテナー一覧
+
+`docker ps -a`:全てのコンテナー（終了したコンテナーも含む）
+
+`docker stop [ID|NAME]`: コンテナーを停止
+
+`docker start [ID|NAME]` 停止したコンテナーの再実行
+
+`docker run -i -t IMAGE /bin/bash` コンテナーに入る。`-i` intaractive `-t` terminal
+
+
+
+
+
+
