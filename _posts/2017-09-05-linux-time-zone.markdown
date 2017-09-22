@@ -7,7 +7,7 @@ tags: [date, time, linux, server]
 ---
 
 ### オリジナルをバックアップ
-cp /etc/localtime /etc/localtime.org
+`cp /etc/localtime /etc/localtime.org`
 
 ### タイムゾーンファイルの変更
-ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+`ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime`
