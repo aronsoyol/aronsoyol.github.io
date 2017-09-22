@@ -41,7 +41,7 @@ Enter passphrase for key '/Users/aron/.ssh/id_rsa':
 Permission denied (publickey).
 ```
 
-今度はssh秘密鍵のパスワードが間違ったら、ログインでくないようになった。
+今度はssh秘密鍵のパスワードが間違ったら、ログイン出来ないようになった。
 
 
 
