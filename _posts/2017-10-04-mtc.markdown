@@ -1,6 +1,7 @@
 ---
 title: Mongolian Text Component
 layout: post
+permalink: mtc
 ---
 
 

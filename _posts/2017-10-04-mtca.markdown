@@ -1,6 +1,8 @@
 ---
 title: Mongolian Text Component for Android
 layout: post
+permalink: mtca
+
 ---
 
 
