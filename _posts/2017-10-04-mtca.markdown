@@ -1,7 +1,7 @@
 ---
-title: MTCA
+title: Mongolian Text Component for Android
 layout: post
-permalink: MTCA
 ---
 
-## MTCA
+
+[http://www.github.com/aronsoyol/mtca](http://www.github.com/aronsoyol/mtca)

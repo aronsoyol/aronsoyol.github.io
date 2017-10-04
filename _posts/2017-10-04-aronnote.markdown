@@ -4,4 +4,4 @@ layout: post
 permalink: AronNote
 ---
 
-## Abou AronNote2
+## About AronNote2
