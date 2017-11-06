@@ -58,7 +58,7 @@ $$P(B_i|A)= \frac{P(A|B_i)P(B_i)}{P(A)}=\frac{P(A|B_i)p(\theta)}{\sum_{i=1}^{N}P
     $$p(\theta\vert\boldsymbol{x})=\frac{p(\theta)f(\boldsymbol{x}\vert\theta)}{\int_{\Theta}p(\theta)f(\boldsymbol{x}\vert\theta)d{\theta}}\propto p(\theta)\cdot f(\boldsymbol{x}\vert\theta)$$
 
     - $f(\boldsymbol{x}\vert\theta)=\prod_{i=i}^nf(x_i\vert\theta)$は尤度である、尤度は条件部$\theta$の関数で、$x$の分布ではない為、わざと$p$を使わない。
-    - ベイズでは分布のパラメータ$\theta$が確率分布すると仮定する
+    - ベイズでは分布のパラメータ$\theta$が確率分布すると仮定する, 伝統統計学ではパラメータが不変と見なす。
     - $\propto$：比例する
     - 分母は変数$\theta$にとって定数である$\Rightarrow $ 事後分布は事前分布と尤度に比例する
 
@@ -112,7 +112,7 @@ Dir(\boldsymbol{\pi}|\boldsymbol{\alpha})=\frac{\Gamma\left(\alpha_0\right)}{ \p
 
 - 真の分布： $p^*(x)$
     - 知ることが出来ない
-    - 現実のデータは何らかの分布から生成されたとは限らない
+    - そもそも現実のデータは何らかの分布から生成されたとは限らない
     - 数学的仮定
 
 - 統計的生成モデル：$p({x}\vert{\phi})$
@@ -132,6 +132,8 @@ $$KL[p^*(x)\|p(x|\phi)]=\int p^*(x)\log\frac{p^*(x)}{p(x|\phi)}dx.$$
 
 $$KL[p^*(x)\|p(x|\phi)] \geq 0$$
 
+KL情報量が０の時は真の分布と近似の分布が一致する
+
 $$KL[p^*(x)\|p(x|\phi)] = 0\Leftrightarrow p^*(x)=p(x|\phi)$$
 
 - 以下によって$p(x\vert\phi)$を求める
@@ -139,6 +141,8 @@ $$KL[p^*(x)\|p(x|\phi)] = 0\Leftrightarrow p^*(x)=p(x|\phi)$$
 $$\phi^*= \mathop{\rm argmin}\limits_{\phi}\left\{KL[p^*(x)\|p(x|\phi)]\right\}$$
 
 ### 最尤推定, Maximum Likelihood Estimattion, (MLE)
+
+- 伝統統計学
 
 $$KL[p^*(x)\|p(x|\phi)]=\int p^*(x)\log\frac{p^*(x)}{p(x|\phi)}dx.$$
 
@@ -163,25 +167,27 @@ $p^*(x)$
     $\mathbb{E}_{p^*(x)}\left[\log{p(x)|\phi)}\right]$
     を求めることが出来ない
 
-- 観測データを真の分布からのサンプルとして期待値計算を近似する
+- 観測データを真の分布からのサンプルとして期待値計算を近似する(モンテカルロ積分)
 
 $$\mathbb{E}_{p^*(x)}\left[\log{p(x|\phi)}\right]\approx\frac{1}{n}\sum\limits_{i=1}^n\log p(x_i|\phi)$$
 
 $$\phi_{ML}^*=\mathop{\rm argmax}\limits_{\phi}\left\{\sum\limits_{i=1}^n\log p(x_i|\phi)\right\}$$
 
-### 最大事後確率推定, Maximum a posterior, (MAP)
+### 最大事後確率推定
+
+- ベイズ統計学
+- Maximum a posterior(MAP)
+- 点推定
 
 $$\phi_{MAP}^*=\mathop{\rm argmax}\limits_{\phi}\left\{\log p(\phi|\eta)+\sum\limits_{i=1}^n\log p(x_i|\phi)\right\}$$
 
 - 過学習防止，汎化能力高い
 
-### 期待事後推定, Expected a posterior, (EAP)
+### 事後期待値推定
 
-- 新たなデータ$x^*$
-に対して、
+- ベイズ統計学
+- Expected a posterior(EAP)
+- 点推定
 
-$$p(x^*|\boldsymbol{x})=\int p(x^*|\phi)p(\phi|\boldsymbol{x})d\phi= \mathbb{E}_{p(\phi|\boldsymbol{x})}\left[p(x^*|\phi)\right].$$
-
-- ベイズ推定の枠組み
 
 
