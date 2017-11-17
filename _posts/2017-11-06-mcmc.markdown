@@ -1,0 +1,29 @@
+---
+title: Markov Chain Monte Carlo Method
+layout: post
+---
+
+## Monte Carlo 法(Sampling Method)
+
+- 乱数を用いてシミュレーションや数値計算を行う手法の総称。
+
+## Monte Carlo 積分
+
+- 以下の期待値は解析的方法を用いて厳密に評価出来ないと仮定する。$p(x)$は確率分布。
+
+$$\mathbb{E}(f)=\int f(x)p(x)dx.\tag{1}$$
+
+- $p(x)$からのサンプルを独立にN個生成して$\mathbb{E}(f)$を近似できる。
+
+$$\mathbb{E}(f)\approx\frac{1}{N}\sum\limits_{n=1}^{N} f(z_n)\tag{2}$$
+
+- 任意の関数$f(x)$の積分をモンテカルロ法で求める
+
+$$\int_a^bf(x)dx\tag{3}$$
+
+式(1)と違って分布$p(x)$が入ってない。
+以下のように式変換する。
+
+$$ {(a-b)}\int_a^bf(x)\frac{1}{a-b}dx= (a-b)\int_a^bf(x)p(x)dx\tag{4}$$
+
+$p(x)$は区間(a,b)での一様分布。
