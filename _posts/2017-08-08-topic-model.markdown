@@ -6,6 +6,7 @@ date: 2017-08-08
 tags: ["Topic_Model", LDA]
 ---
 
+
 ## Latent Dirichlet Allocation
 
 - 言語モデル
@@ -63,13 +64,11 @@ $$P(B_i|A)= \frac{P(A|B_i)P(B_i)}{P(A)}=\frac{P(A|B_i)p(\theta)}{\sum_{i=1}^{N}P
     - 分母は変数$\theta$にとって定数である$\Rightarrow $ 事後分布は事前分布と尤度に比例する
 
 - 尤度関数：$f({\boldsymbol{x}}\vert\theta)$
-
-    - $\theta$が変数
-    - $\boldsymbol{x}=\left\{x_i,x_2,...mx_n\right\}$が観測値なので定数
-    - $\int_{\Theta} f({\boldsymbol{x}}\vert\theta)=1$が成立する保証がないので確率の要件を満たさない。その為わざと$p$と書かない。
+- $\theta$が変数
+- $\mathbb{x}=\left\\{x_i,x_2,...x_n\right\\}$ が観測値なので定数
+- $\int_{\Theta} f({\boldsymbol{x}}\vert\theta)=1$が成立する保証がないので確率の要件を満たさない。その為わざと$p$と書かない。
 
 - 共役事前分：$p(\theta\vert\eta)$
-
     - 事後分布と同じ分布族
     - $\eta$：ハイパーパラメータ
 
