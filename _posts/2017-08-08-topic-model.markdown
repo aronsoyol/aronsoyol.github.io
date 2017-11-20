@@ -65,7 +65,7 @@ $$P(B_i|A)= \frac{P(A|B_i)P(B_i)}{P(A)}=\frac{P(A|B_i)p(\theta)}{\sum_{i=1}^{N}P
 - 尤度関数：$f({\boldsymbol{x}}\vert\theta)$
 
     - $\theta$が変数
-    - $\boldsymbol{x}=\left\\{x_i,x_2,...mx_n\right\\}$が観測値なので定数
+    - $\boldsymbol{x}=\left\{x_i,x_2,...mx_n\right\}$が観測値なので定数
     - $\int_{\Theta} f({\boldsymbol{x}}\vert\theta)=1$が成立する保証がないので確率の要件を満たさない。その為わざと$p$と書かない。
 
 - 共役事前分：$p(\theta\vert\eta)$

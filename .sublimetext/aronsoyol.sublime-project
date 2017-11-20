@@ -1,0 +1,20 @@
+{
+    "folders":
+    [
+        {
+            "path": "/Users/aron/dev/jekyll0/aronsoyol"
+        }
+    ],
+    "settings":
+    {
+        "Jekyll":
+        {
+            "jekyll_auto_find_paths": true,
+            "jekyll_datetime_format": "%Y-%m-%d %H:%M:%S",
+            "jekyll_drafts_path": "/Users/aron/dev/jekyll0/aronsoyol/_drafts",
+            "jekyll_posts_path": "/Users/aron/dev/jekyll0/aronsoyol/_posts",
+            "jekyll_templates_path": "/Users/aron/dev/jekyll0/aronsoyol/_templates",
+            "jekyll_uploads_path": "/Users/aron/dev/jekyll0/aronsoyol/_uploads"
+        }
+    }
+}
