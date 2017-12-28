@@ -37,3 +37,19 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+table  {
+    border: solid 1px grey; border-collapse: separate;
+}
+td {
+    border:solid 1px  grey;
+}
+th{
+    background-color: #efefef;
+    border:solid 1px  grey;
+    
+}
+/*HTML テーブルの偶数行*/
+/*tr:nth-child(even) {
+    background: #eee;
+}*/
