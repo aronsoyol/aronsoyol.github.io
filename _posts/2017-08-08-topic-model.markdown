@@ -22,7 +22,7 @@ tags: ["Topic_Model", LDA]
 ## LDAの生成過程
 
 - 文章は幾つかのトピックによって生成された（全K個のトピックと仮定）
-単語の番号はそのトピックの番号
+単語の右上の番号はその単語が属するトピックの番号
 
 ![adfadf]({{ site.baseurl }}/assets/lda1.jpg)
 
@@ -172,20 +172,18 @@ $$\mathbb{E}_{p^*(x)}\left[\log{p(x|\phi)}\right]\approx\frac{1}{n}\sum\limits_{
 
 $$\phi_{ML}^*=\mathop{\rm argmax}\limits_{\phi}\left\{\sum\limits_{i=1}^n\log p(x_i|\phi)\right\}$$
 
-### 最大事後確率推定
+### 最大事後確率推定、Maximum a posterior(MAP)
 
 - ベイズ統計学
-- Maximum a posterior(MAP)
 - 点推定
 
 $$\phi_{MAP}^*=\mathop{\rm argmax}\limits_{\phi}\left\{\log p(\phi|\eta)+\sum\limits_{i=1}^n\log p(x_i|\phi)\right\}$$
 
 - 過学習防止，汎化能力高い
 
-### 事後期待値推定
+### 事後期待値推定、Expected a posterior(EAP)
 
 - ベイズ統計学
-- Expected a posterior(EAP)
 - 点推定
 
 
