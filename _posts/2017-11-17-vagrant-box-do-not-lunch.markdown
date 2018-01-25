@@ -1,5 +1,5 @@
 ---
-title: vagrant boxが立ち上がらない件
+title: Vagrant boxが立ち上がらない件
 layout: post
 date: 2017-11-17
 tag: [windows, docker, hyper-v, vagrant, "virtual box"]
