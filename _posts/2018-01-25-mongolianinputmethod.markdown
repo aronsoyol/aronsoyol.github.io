@@ -9,7 +9,9 @@ permalink: learn-mongol-ime
 ---
 
 <!-- # MN-IT 2017年第三回定例会 -->
+## 主催
 
+モンゴルITネットワーク
 ## 日時
 
 - 2月24日(土)
@@ -42,8 +44,14 @@ permalink: learn-mongol-ime
 
 
 ## 連絡
- - アロンソイラ <a href="tel:09063001635">090-6300-1635</a>
- - アゴダム <a href="tel:08066329988‬">080-6632-9988‬</a>
+
+ - アゴダム 
+    - TEL <a href="tel:08066329988‬">080-6632-9988‬</a>
+    - WECHAT agudamY
+ - アロンソイラ
+    - TEL <a href="tel:09063001635">090-6300-1635</a> 
+    - WECHAT raonga290
+
 
 
 ## 懇親会
@@ -56,3 +64,6 @@ permalink: learn-mongol-ime
 どなたでも自由に参加できます。以下のリンクを押して出欠登録を行ってください。
 
 - [https://chouseisan.com/s?h=0cfc81383c1244d1994e234828156e82](https://chouseisan.com/s?h=0cfc81383c1244d1994e234828156e82)
+
+
+
