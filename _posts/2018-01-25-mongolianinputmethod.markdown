@@ -22,7 +22,6 @@ permalink: learn-mongol-ime
 
 ## 開催場所  
 - 住所  
-
 [東京都千代田区神保町2-12-3安富ビル3F](https://www.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E4%BF%9D%E7%94%BA2-12-3%E5%AE%89%E5%AF%8C%E3%83%93%E3%83%AB3F&um=1&ie=UTF-8&sa=X&ved=0.1ahUKEwjNyLX85u7VAhXKrlQKHWsrAqYQ_AUICigB)
 - 最寄り駅  
 神保町駅A4を左へ曲がって50mぐらい
@@ -43,8 +42,8 @@ permalink: learn-mongol-ime
 
 
 ## 連絡
- - **アロンソイラ**  幹事兼講師 <a href="tel:09063001635">090-6300-1635 </a>
- - **アグダム** 委員長 <a href="tel:08066329988‬">080-6632-9988‬</a>
+ - アロンソイラ   <a href="tel:09063001635">090-6300-1635</a>**幹事兼講師**
+ - アグダム  <a href="tel:08066329988‬">080-6632-9988‬</a>**委員長**
 
 
 ## 懇親会
