@@ -1,7 +1,7 @@
 ---
 layout: post
 author: aron
-title: 伝統モンゴル文字入力勉強会
+title: 伝統モンゴル文字入力勉強会2018 in TOKYO
 categories: MN-IT
 data: 2018-01-25
 tag: [MN-IT, 勉強会]
