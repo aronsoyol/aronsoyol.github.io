@@ -5,7 +5,7 @@ title: 伝統モンゴル文字入力勉強会
 categories: MN-IT
 data: 2018-01-25
 tag: [MN-IT, 勉強会]
-permalink: mnit-2017-3
+permalink: learn-mongol-ime
 ---
 
 <!-- # MN-IT 2017年第三回定例会 -->
