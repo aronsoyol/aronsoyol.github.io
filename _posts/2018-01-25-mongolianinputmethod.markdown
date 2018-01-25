@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 author: aron
 title: 伝統モンゴル文字入力勉強会
