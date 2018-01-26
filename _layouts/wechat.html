@@ -1,13 +1,30 @@
----
-layout: default
----
-<img src="/assets/11576765ba74e79.jpg" alt="">
-<img src="/assets/Guyuk_khan's_Stamp_1246.jpg" alt="">
-<img src="/assets/favicon.png" alt="">
-<img src="/assets/lda1.jpg" alt="">
-<img src="/assets/lda2.jpg" alt="">
-<img src="/assets/mongolinput.jpg" alt="">
-<img src="/assets/perceptron.jpg" alt="">
+<!DOCTYPE html>
+
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    <img src="/assets/11576765ba74e79.jpg" alt="">
+    <img src="/assets/Guyuk_khan's_Stamp_1246.jpg" alt="">
+    <img src="/assets/favicon.png" alt="">
+    <img src="/assets/lda1.jpg" alt="">
+    <img src="/assets/lda2.jpg" alt="">
+    <img src="/assets/mongolinput.jpg" alt="">
+    <img src="/assets/perceptron.jpg" alt="">
+    <!-- 为了在微信分享里显示缩略图 -->
+    <!-- 用手机Safari分享的话，一下图片能够显示为缩略图 -->
+<!-- <div style="display: none">
+      <img src="{{ site.baseurl }}/assets/lda1.jpg" />
+    </div>  -->
+<!-- <div style=" overflow:hidden; width:0px; height:0; margin:0 auto; position:absolute; top:-800px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mongols-map.png/450px-Mongols-map.png"></div> -->
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+
+
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -29,3 +46,11 @@ layout: default
 
 
 </article>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
