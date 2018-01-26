@@ -28,7 +28,7 @@ permalink: learn-mongol-ime
 - 最寄り駅  
 神保町駅A4を左へ曲がって50mぐらい
 - 地図  
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.204631462509!2d139.75470076525923!3d35.69658168019067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c140ff3e479%3A0x6f4cc4a317675c33!2z44CSMTAxLTAwNTEg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy656We55Sw56We5L-d55S677yS5LiB55uuIOWuieWvjOODk-ODqw!5e0!3m2!1sja!2sjp!4v1516865428788" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.204631462509!2d139.75470076525923!3d35.69658168019067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c140ff3e479%3A0x6f4cc4a317675c33!2z44CSMTAxLTAwNTEg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy656We55Sw56We5L-d55S677yS5LiB55uuIOWuieWvjOODk-ODqw!5e0!3m2!1sja!2sjp!4v1516865428788" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
