@@ -8,7 +8,7 @@ tag: [MN-IT, 勉強会]
 permalink: learn-mongol-ime
 ---
 {: .center}
-![mongolinput]({{ site.baseurl }}/assets/mongolinput.jpg)
+![mongolinput](https://aronsoyol.github.io{{ site.baseurl }}/assets/mongolinput.jpg)
 <!-- # MN-IT 2017年第三回定例会 -->
 ## 主催
 
