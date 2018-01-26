@@ -1,6 +1,6 @@
 ---
 title: test wechat thumbnail
-layout: post
+layout: wechat
 ---
 
 ![11576765ba74e79.jpg](https://aronsoyol.github.io{{ site.baseurl }}/assets/11576765ba74e79.jpg)

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<img src="/assets/11576765ba74e79.jpg" alt="">
+<img src="/assets/Guyuk_khan's_Stamp_1246.jpg" alt="">
+<img src="/assets/favicon.png" alt="">
+<img src="/assets/lda1.jpg" alt="">
+<img src="/assets/lda2.jpg" alt="">
+<img src="/assets/mongolinput.jpg" alt="">
+<img src="/assets/perceptron.jpg" alt="">
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+      {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+      {% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+
+</article>
