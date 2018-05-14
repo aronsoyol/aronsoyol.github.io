@@ -1,0 +1,15 @@
+---
+title: コマンドラインで組み合わせ
+layout: post
+---
+
+
+## コマンドラインで組み合わせ
+```bash
+$ echo {1,2,3}-{a,b,c}-{D,E,F}
+```
+
+## 出力は：
+```
+1-a-D 1-a-E 1-a-F 1-b-D 1-b-E 1-b-F 1-c-D 1-c-E 1-c-F 2-a-D 2-a-E 2-a-F 2-b-D 2-b-E 2-b-F 2-c-D 2-c-E 2-c-F 3-a-D 3-a-E 3-a-F 3-b-D 3-b-E 3-b-F 3-c-D 3-c-E 3-c-F
+```
