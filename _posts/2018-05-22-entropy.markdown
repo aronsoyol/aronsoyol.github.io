@@ -41,8 +41,8 @@ AAABB
 
 有3个A，2个B,所以
 
-$$\frac{3}{5}\times-\log_2\{\frac{3}{5}\} + \frac{3}{5}\times-\log_2\{\frac{3}{5}\} + \frac{3}{5}\times-\log_2\{\frac{3}{5}\} + \frac{2}{5}\times-\log_2\{\frac{2}{5}\}+ \frac{2}{5}\times-\log_2\{\frac{2}{5}\} \
-= 1.6525187082781074$$
+$$  \begin{align*} &\quad \frac{3}{5} \times-\log_2\{\frac{3}{5}\} + \frac{3}{5}\times-\log_2\{\frac{3}{5}\} + \frac{3}{5}\times-\log_2\{\frac{3}{5}\} + \frac{2}{5}\times-\log_2\{\frac{2}{5}\}+ \frac{2}{5}\times-\log_2\{\frac{2}{5}\}  \\
+&= 1.6525187082781074 \end{align*}$$
 
 以下是python的计算结果
 
