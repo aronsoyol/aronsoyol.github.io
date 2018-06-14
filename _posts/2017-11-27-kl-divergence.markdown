@@ -19,7 +19,6 @@ $$\begin{equation}KL(p, q) =\sum_\limits{x}p(x)\log\frac{p(x)}{q(x)} \end{equati
 $$KL(q, p)\ge 0$$
 
 - pとqが同じ分布である必要十分条件はKLダイバージェンスがゼロである
--
 
 $$KL(p, q) = 0 \iff p =q$$
 
@@ -43,11 +42,14 @@ $$KL[p^*(x)\|p(x|\phi)] = 0\iff p^*(x)=p(x|\phi)$$
 $$\phi^*= \mathop{\rm argmin}\limits_{\phi}\left\{KL[p^*(x)\|p(x|\phi)]\right\}$$
 
 ## Jensen-Shannon ダイバージェン
-KL中
+KL不对称
+
 $$KL(p, q) \neq KL(q,p)$$
+
 所以引入JS
-$$JS(P,Q)= \frac{1}{2}KL(P,M)+\frac{1}{2}KL(P,M)\\
-ただし、M=\frac{P(X)+Q(X)}{2}$$
+
+$$\begin{eqnarray}JS(P,Q)= \frac{1}{2}KL(P,M)+\frac{1}{2}KL(P,M)\\
+ただし、M=\frac{P(X)+Q(X)}{2}\end{eqnarray}$$
 
 $$JS(P,Q) = JS(Q,P)$$
 

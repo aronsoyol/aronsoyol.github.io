@@ -1,6 +1,6 @@
 ---
 layout: post
-author: aron
+author: Aron
 title: "关于熵"
 date: "2018-05-22 11:17:04 +0900"
 permalink: entropy
