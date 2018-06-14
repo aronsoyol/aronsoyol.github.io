@@ -26,9 +26,10 @@ $$I_A=\log_2{\frac{1}{P_A}} = -\log_2{P_A} $$
 假设随机变量$X$的取值范围是
 $\left\\{x_1,x_2,...,x_n \right\\}$
 
-$$\begin{array}\
-H(X) &= \sum_i P(x_i){I_i} \\ &= -\sum_i P(x_i){\log_2{P(x_i)}}
-\end{array}$$
+$$\begin{eqnarray}
+H(X) &=&  \sum_i P(x_i){I_i} \\
+     &=&  -\sum_i P(x_i){\log_2{P(x_i)}}
+\end{eqnarray}$$
 
 - 取值范围：
 $$0 \leq H(X) \leq log(n)$$
@@ -59,10 +60,10 @@ $$P_A=0.5,  P_B=0.5$$
 
 - 信息量  
 
-$$\begin{array}\\
-I_A&=\log_2{\frac{1}{P_A}} = -\log_2{P_A} = 1\\
-I_B&=\log_2{\frac{1}{P_B}} = -\log_2{P_B} = 1
-\end{array}$$
+$$\begin{eqnarray}\\
+I_A&=&\log_2{\frac{1}{P_A}} &=& -\log_2{P_A} = 1\\
+I_B&=&\log_2{\frac{1}{P_B}} &=& -\log_2{P_B} = 1
+\end{eqnarray}$$
 
 - 熵的计算:
 
@@ -89,10 +90,10 @@ $$P_A=\frac{1}{4}, P_B=\frac{3}{4}$$
 
 - 信息量
 
-$$\begin{array}\
-I_A&=\log_2{\frac{1}{P_A}} &= -\log_2{P_A} = 2.0\\
-I_B&=\log_2{\frac{1}{P_B}} &= -\log_2{P_B} = 0.4150374992788438
-\end{array}$$
+$$\begin{eqnarray}\
+I_A &=& \log_2{\frac{1}{P_A}} &=& -\log_2{P_A} = 2.0\\
+I_B &=& \log_2{\frac{1}{P_B}} &=& -\log_2{P_B} = 0.4150374992788438
+\end{eqnarray}$$
 
 - 熵的计算：
 
