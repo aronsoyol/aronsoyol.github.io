@@ -24,7 +24,7 @@ $$I_A=\log_2{\frac{1}{P_A}} = -\log_2{P_A} $$
 - 表示系统的不确定性
 -
 假设随机变量$X$的取值范围是
-$\left\{x_1,x_2,...,x_n \right\}$
+$\left\\{x_1,x_2,...,x_n \right\\}$
 
 $$\begin{array}\
 H(X) &= \sum_i P(x_i){I_i} \\ &= -\sum_i P(x_i){\log_2{P(x_i)}}
@@ -76,16 +76,16 @@ PP_1 = 2^H = 2
 
 #### 使用数据集2建立模型
 
-- 模型参数
+- 模型参数  
 $$P_A=\frac{1}{4} \\ P_B=\frac{3}{4}$$
 
 
 
 
-- 信息量
+- 信息量  
 $$\begin{array}\
-I_A&=\log_2{\frac{1}{P_A}} = -\log_2{P_A} = 2.0\\
-I_B&=\log_2{\frac{1}{P_B}} = -\log_2{P_B} = 0.4150374992788438
+I_A&=\log_2{\frac{1}{P_A}} &= -\log_2{P_A} = 2.0\\
+I_B&=\log_2{\frac{1}{P_B}} &= -\log_2{P_B} = 0.4150374992788438
 \end{array}$$
 
 - 熵的计算：
@@ -105,8 +105,8 @@ $$\exp\left\{ - \frac{\sum_{d=1}^{D^{test}}\log p(\boldsymbol{w}_d^{test}|\mathc
 
 - $\sum_{d=1}^{D^{test}}N_d^{test}$ 表示所有测试文档中单词数的总和。
     - $N_d$是文档d的单词总数。
-    - D是文档的总数。
-- $p(\boldsymbol{w}_d^{test}|\mathcal{M})$ 文档d中单词的似然。
+    - D是文档的总数。  
+    - $ p(\boldsymbol{w}_d^{test}\vert\mathcal{M}) $ 文档d中单词的似然。
 
 $$\begin{array} \
 &\quad p(\boldsymbol{w}_d^{test}|\mathcal{M})
@@ -116,7 +116,7 @@ $$\begin{array} \
 其中$\boldsymbol{w}_d=\{\mathrm{w_{d1}},\mathrm{w_{d2}},...,\mathrm{w_{dN_d}} \}$，
 
 
-任意一个单词的分布$$p(\mathrm{w_{dn}}|\mathcal{M}) = \sum_{k=1}^{K}\theta_{dk}\phi_{kw_{dn}}$$
+任意一个单词的分布$$p(\mathrm{w_{dn}}\vert\mathcal{M}) = \sum_{k=1}^{K}\theta_{dk}\phi_{kw_{dn}}$$
 
 
 其中
