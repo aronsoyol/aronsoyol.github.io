@@ -3,20 +3,23 @@ title: KL情報量
 layout: post
 ---
 
+- divergence  
+分歧; 差异
+
 - **Kullback-Leibler divergence**
 
 ## KLダイバージェンス[^ref1]
 
 二つの確率分布p(x)とq(x)のKLダイバージェンスは以下のように定義されます
 
-$$\begin{equation}KL(p, q) =\sum_\limits{x}p(x)\log\frac{p(x)}{q(x)} \end{equation}$$ 
+$$\begin{equation}KL(p, q) =\sum_\limits{x}p(x)\log\frac{p(x)}{q(x)} \end{equation}$$
 
 - KLダイバージェンスはゼロ以上
 
 $$KL(q, p)\ge 0$$
 
 - pとqが同じ分布である必要十分条件はKLダイバージェンスがゼロである
-- 
+-
 
 $$KL(p, q) = 0 \iff p =q$$
 
@@ -38,6 +41,15 @@ $$KL[p^*(x)\|p(x|\phi)] = 0\iff p^*(x)=p(x|\phi)$$
 - 以下によって$p(x\vert\phi)$を求める
 
 $$\phi^*= \mathop{\rm argmin}\limits_{\phi}\left\{KL[p^*(x)\|p(x|\phi)]\right\}$$
+
+## Jensen-Shannon ダイバージェン
+KL中
+$$KL(p, q) \neq KL(q,p)$$
+所以引入JS
+$$JS(P,Q)= \frac{1}{2}KL(P,M)+\frac{1}{2}KL(P,M)\\
+ただし、M=\frac{P(X)+Q(X)}{2}$$
+
+$$JS(P,Q) = JS(Q,P)$$
 
 ## 参考文献
 
