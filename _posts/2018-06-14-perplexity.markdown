@@ -57,13 +57,13 @@ $$1 \leq PP \leq n $$
 $$P_A=0.5 \\ P_B=0.5$$
 
 - 信息量
-$$\begin{array}\
+$$\begin{array}\\
 I_A&=\log_2{\frac{1}{P_A}} = -\log_2{P_A} = 1\\
 I_B&=\log_2{\frac{1}{P_B}} = -\log_2{P_B} = 1
 \end{array}$$
 
 - 熵的计算：
-$$H=\frac{{I_A} + {I_B}}{2} = 1$$
+$$H=\frac{ I_A + I_B }{2} = 1$$
 
 - 复杂度是：
 $$\begin{array}\
@@ -89,7 +89,7 @@ I_B&=\log_2{\frac{1}{P_B}} = -\log_2{P_B} = 0.4150374992788438
 \end{array}$$
 
 - 熵的计算：
-$$H=\frac{{I_A} + {I_B}}{2} = 1.207518749639422$$
+$$H=\frac{I_A + I_B}{2} = 1.207518749639422$$
 
 - 复杂度是：
 $$\begin{array}\
