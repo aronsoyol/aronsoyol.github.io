@@ -53,19 +53,23 @@ $$1 \leq PP \leq n $$
 
 #### 使用数据集1建立模型
 
-- 模型参数
-$$P_A=0.5 \\ P_B=0.5$$
+- 模型参数  
 
-- 信息量
+$$P_A=0.5,  P_B=0.5$$
+
+- 信息量  
+
 $$\begin{array}\\
 I_A&=\log_2{\frac{1}{P_A}} = -\log_2{P_A} = 1\\
 I_B&=\log_2{\frac{1}{P_B}} = -\log_2{P_B} = 1
 \end{array}$$
 
-- 熵的计算：
+- 熵的计算:
+
 $$H=\frac{ I_A + I_B }{2} = 1$$
 
 - 复杂度是：
+
 $$\begin{array}\
 PP_1 = 2^H = 2
 \end{array}$$
@@ -77,26 +81,31 @@ PP_1 = 2^H = 2
 #### 使用数据集2建立模型
 
 - 模型参数  
-$$P_A=\frac{1}{4} \\ P_B=\frac{3}{4}$$
+
+$$P_A=\frac{1}{4}, P_B=\frac{3}{4}$$
 
 
 
 
-- 信息量  
+- 信息量
+
 $$\begin{array}\
 I_A&=\log_2{\frac{1}{P_A}} &= -\log_2{P_A} = 2.0\\
 I_B&=\log_2{\frac{1}{P_B}} &= -\log_2{P_B} = 0.4150374992788438
 \end{array}$$
 
 - 熵的计算：
+
 $$H=\frac{I_A + I_B}{2} = 1.207518749639422$$
 
 - 复杂度是：
+
 $$\begin{array}\
 PP_2 = 2^H = 2.3
 \end{array}$$
 
-#### 结论
+#### 结论  
+
 因为$PP_1 < PP_2$，所以 使用数据集1建立的模型,对于测试数据集的预测性能更好。
 
 ## LDA 的 Perplexity
@@ -113,7 +122,8 @@ $$\begin{array} \
 &= \prod_{n=1}^{N_d} p(\mathrm{w_{dn}}|\mathcal{M})
 \end{array}$$
 
-其中$\boldsymbol{w}_d=\{\mathrm{w_{d1}},\mathrm{w_{d2}},...,\mathrm{w_{dN_d}} \}$，
+其中
+$$\boldsymbol{w}_d=\left\{ \mathrm{w_{d1}},\mathrm{w_{d2}},...,\mathrm{w_{dN_d}} \right\}$$
 
 
 任意一个单词的分布$$p(\mathrm{w_{dn}}\vert\mathcal{M}) = \sum_{k=1}^{K}\theta_{dk}\phi_{kw_{dn}}$$
