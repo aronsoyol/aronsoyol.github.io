@@ -12,7 +12,7 @@ permalink: perceptron
 線形分離可能なデータの決定境界を下の図の様に得る
 
 {: .center}
-![adfadf]({{ site.baseurl }}/assets/perceptron.jpg)
+![perceptron.jpg]({{ site.baseurl }}/assets/perceptron.jpg)
 
 
 ## 特徴ベクトルとプロトタイプとの距離
@@ -75,12 +75,10 @@ $\omega$を求めるプロセス
     $\boldsymbol{\omega}'=\boldsymbol{\omega}+\rho\boldsymbol{x}$
     - クラス2をクラス1と誤識別した場合
     $\boldsymbol{\omega}'=\boldsymbol{\omega}-\rho\boldsymbol{x}$
-    
+
 4. 全てのデータに2,3を繰り返す
 5. 全て正しく識別できたら終了
 
 ## 疑問
 
 [パーセプトロンの収束定理の証明](http://ocw.nagoya-u.jp/files/253/haifu(04-4).pdf)が分からない。
-
-

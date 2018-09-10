@@ -7,7 +7,11 @@ tags: ["Topic_Model", LDA]
 ---
 
 
+
+
 ## Latent Dirichlet Allocation
+
+
 
 - 言語モデル
     - 文の生成確率を計算
@@ -39,11 +43,11 @@ tags: ["Topic_Model", LDA]
 - $p(x_1,x_2,...,x_n)=\prod\limits_{i=1}^{n}p(x_i)= \prod\limits_{i=1}^{K}\pi_i^{n_k}$
 - 各試行の回数だけに興味ある場合
 
-$$\begin{align*}
+$$\begin{aligned}
 \quad p(\{n_1,n_2,...,n_K\}|\boldsymbol{\pi},n)& =  Multi(\{n_1,n_2,...,n_K\}|\boldsymbol{\pi},n)\\
 &=  C_n^{n_1}C_{n-n_1}^{n_2}...C_{n-\sum_{i=1}^{K-2}n_i}^{n_{k-1}}C_{n_k}^{n_k}\prod\limits_{i=1}^{K}\pi_i^{n_k}\\
 &= \frac{n!}{\prod_{k=1}^Kn_k!}\prod\limits_{k=1}^K\pi_k^{n_k}\\
-\end{align*}$$
+\end{aligned}$$
 
 - トピックから単語を生成する分布
 - 文章のトピックの分布
@@ -65,7 +69,7 @@ $$P(B_i|A)= \frac{P(A|B_i)P(B_i)}{P(A)}=\frac{P(A|B_i)p(\theta)}{\sum_{i=1}^{N}P
 
 - 尤度関数：$f({\boldsymbol{x}}\vert\theta)$
 - $\theta$が変数
-- $\mathbb{x}=\left\\{x_i,x_2,...x_n\right\\}$ が観測値なので定数
+- $\mathbb{x}=\left\lbrace x_i,x_2,...x_n\right\rbrace $ . が観測値なので定数
 - $\int_{\Theta} f({\boldsymbol{x}}\vert\theta)=1$が成立する保証がないので確率の要件を満たさない。その為わざと$p$と書かない。
 
 - 共役事前分：$p(\theta\vert\eta)$
@@ -79,26 +83,28 @@ $$P(B_i|A)= \frac{P(A|B_i)P(B_i)}{P(A)}=\frac{P(A|B_i)p(\theta)}{\sum_{i=1}^{N}P
 
 ## ディリクレ分布(Dirichlet distribution)
 
-$$\begin{array}{}\\
-Dir(\boldsymbol{\pi}|\boldsymbol{\alpha})=\frac{\Gamma\left(\alpha_0\right)}{ \prod_{k=1}^{K}\Gamma\left(\alpha_k\right) }\prod_{k=1}^{K}\pi_k^{\alpha_k-1}\\
-但し、 \left\{\begin{array}{ll}\alpha_0&=\sum_{k=1}^K\alpha_k\\
-\Gamma(x)&=(x-1)!\end{array}\right.\end{array}$$ 
+$$
+Dir(\boldsymbol{\pi}|\boldsymbol{\alpha})=\frac{\Gamma\left(\alpha_0\right)}{ \prod_{k=1}^{K}\Gamma\left(\alpha_k\right) }\prod_{k=1}^{K}\pi_k^{\alpha_k-1}$$
+
+但し：
+$\begin{array}{ll}\alpha_0&=\sum_{k=1}^K\alpha_k\\
+\Gamma(x)&=(x-1)!\end{array}$
 
 - 多項分布の共役事前分布
 - $\boldsymbol{\pi}$：確率変数
 - $\boldsymbol{\alpha}$：ハイパーパラメータ
 - 事後確率の計算
 
-    $$\begin{align*}
+    $$\begin{aligned}
     p(\boldsymbol{\pi}|\boldsymbol{x},\boldsymbol{\alpha})\propto p(\boldsymbol{\pi}\vert\boldsymbol{\alpha})f(\boldsymbol{x}|\boldsymbol{\pi})\propto  \prod\limits_{k=1}^K{\pi}_k^{n_k} \cdot \prod_{k=1}^{K}{\pi}_k^{\alpha_k-1} = \prod_{k=1}^{K}{\pi}_k^{n_k+\alpha_k-1}
-    \end{align*}$$
+    \end{aligned}$$
 
     正規化すれば
 
-    $$\begin{align*}
+    $$\begin{aligned}
     p(\boldsymbol{\pi}|\boldsymbol{x},\boldsymbol{\alpha})&= \frac{\prod_{k=1}^{K}{\pi}_k^{n_k+\alpha_k-1}}{\int_{\pi}{\prod_{k=1}^{K}{\pi}_k^{n_k+\alpha_k-1}d{\pi}}}\\
     &=\frac{\Gamma\left( n+\alpha_0\right)}{\prod_{k=1}^K\Gamma\left(n_k+\alpha_k \right)}
-    \end{align*}$$
+    \end{aligned}$$
 
     但し、以下の証明は？
 
@@ -107,7 +113,7 @@ Dir(\boldsymbol{\pi}|\boldsymbol{\alpha})=\frac{\Gamma\left(\alpha_0\right)}{ \p
 ## Bayes推定
 
 
-### 観測値 $\boldsymbol{x}=\\{x_1,x_2,...,x_n\\}$に対して
+### 観測値 $\boldsymbol{x}=\{x_1,x_2,...,x_n\}$に対して
 
 - 真の分布： $p^*(x)$
     - 知ることが出来ない
@@ -147,17 +153,17 @@ $$KL[p^*(x)\|p(x|\phi)]=\int p^*(x)\log\frac{p^*(x)}{p(x|\phi)}dx.$$
 
 - $p^*(x)$による期待値
 
-$$\begin{align*}KL[p^*(x)\|p(x|\phi)]&=\int p^*(x)\log\frac{p^*(x)}{p(x|\phi)}dx.\\
+$$\begin{aligned}KL[p^*(x)\|p(x|\phi)]&=\int p^*(x)\log\frac{p^*(x)}{p(x|\phi)}dx.\\
 &= \mathbb{E}_{p^*(x)}\left[\log\frac{p^*(x)}{p(x|\phi)}\right]\\
 &= \mathbb{E}_{p^*(x)}\left[\log{p^*(x)}\right]-\mathbb{E}_{p^*(x)}\left[\log{p(x|\phi)}\right]
-\end{align*}$$
+\end{aligned}$$
 
-$$\begin{align*}
+$$\begin{aligned}
 \phi^*&=\mathop{\rm argmin}\limits_{\phi}\left\{KL[p^*(x)\|p(x|\phi)]\right\}\\
 &=\mathop{\rm argmin}\limits_{\phi}\left\{\mathbb{E}_{p^*(x)}\left[\log{p^*(x)}\right]-\mathbb{E}_{p^*(x)}\left[\log{p(x|\phi)}\right]\right\}\\
 &=\mathop{\rm argmin}\limits_{\phi}\left\{-\mathbb{E}_{p^*(x)}\left[\log{p(x|\phi)}\right]\right\}\\
 &=\mathop{\rm argmax}\limits_{\phi}\left\{\mathbb{E}_{p^*(x)}\left[\log{p(x|\phi)}\right]\right\}\\
-\end{align*}$$
+\end{aligned}$$
 
 - 真の分布
 $p^*(x)$

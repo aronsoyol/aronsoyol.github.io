@@ -27,7 +27,7 @@ $$KL(p, q) = 0 \iff p =q$$
 
 - 公式
 
-$$\begin{equation}KL[p^*(x)\|p(x|\phi)]=\int p^*(x)\log\frac{p^*(x)}{p(x|\phi)}dx.\end{equation}$$
+$$\begin{equation}KL[p^*(x)\Vert p(x|\phi)]=\int p^*(x)\log\frac{p^*(x)}{p(x|\phi)}dx.\end{equation}$$
 
 - 性質
 
@@ -35,11 +35,11 @@ $$KL[p^*(x)\|p(x|\phi)] \geq 0$$
 
 KL情報量が０の時は真の分布と近似の分布が一致する
 
-$$KL[p^*(x)\|p(x|\phi)] = 0\iff p^*(x)=p(x|\phi)$$
+$$KL[p^*(x)\Vert p(x|\phi)] = 0\iff p^*(x)=p(x|\phi)$$
 
 - 以下によって$p(x\vert\phi)$を求める
 
-$$\phi^*= \mathop{\rm argmin}\limits_{\phi}\left\{KL[p^*(x)\|p(x|\phi)]\right\}$$
+$$\phi^*= \mathop{\rm argmin}\limits_{\phi}\left\{KL[p^*(x)\Vert p(x|\phi)]\right\}$$
 
 ## Jensen-Shannon ダイバージェン
 KL不对称
