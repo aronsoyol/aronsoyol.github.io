@@ -1,0 +1,33 @@
+---
+title: jdango
+layout: post
+---
+
+# Django projectの作成
+
+## django のインストール
+```
+pip install django
+```
+
+## django プロジェクトの作成
+
+```
+django-admin startproject my_project
+```
+
+
+## サイトの起動
+
+```
+cd my_project
+python manage.py runserver
+```
+8000ポートでdjangoサイトができた。
+
+![]({{ site.baseurl }}/assets/2018-09-24-22-58-50.png)
+
+## 最後に
+
+以上での３ステップでdjangoのサイトを作成されます
+
